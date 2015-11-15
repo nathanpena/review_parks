@@ -1,0 +1,7 @@
+<h1>Playground</h1>
+
+<h2><%= @playground.name %></h2>
+<p><%= @playground.description %></p>
+<%= link_to "Back", playgrounds_path %>
+<%= link_to "Edit", edit_playground_path(@playground) %>
+<%= link_to "Delete", playground_path(@playground), method: :delete, data: {confirm: "Are you sure?"} %>
