@@ -1,12 +1,8 @@
-<h1>All Playground</h1>
+<h1>All Playgrounds</h1>
 <% cache "all_playgrounds", skip_digest: true do %>
   <% @playgrounds.each do |playground| %>
     <h2><%= link_to playground.name, playground_path(playground) %></h2>
   <% end %>
 <% end %>
 <%= link_to "Add Playground", new_playground_path %>
-
-
   
-
-
